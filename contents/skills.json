@@ -1,0 +1,246 @@
+{
+    "skills": {
+        "en": {
+            "title" : "Skills",
+            "viewBox": "0 0 512 512",
+            "icon": "<path d=\"M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z\"/>",
+            "items": [
+                {
+                    "name": "HTML5",
+                    "icon": "html-5",
+                    "order": 1,
+                    "description": "Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet que permite ordenar y etiquetar diversos documentos dentro de una lista."
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "css-3",
+                    "order": 2,
+                    "description": "Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "node",
+                    "order": 4,
+                    "description": "Es un entorno de ejecución multiplataforma, de código abierto, para la capa del servidor basado y construido con el motor de JavaScript V8 de Chrome."
+                },
+                {
+                    "name": "Babel",
+                    "icon": "babel",
+                    "order": 11,
+                    "description": "Babel es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión compatible con versiones anteriores de JavaScript en navegadores o entornos actuales y anteriores."
+                },
+                {
+                    "name": "Gatsby",
+                    "icon": "gatsby",
+                    "order": 15,
+                    "description": "Gatsby es un marco de desarrollo de código abierto y gratuito basado en React para crear sitios web y aplicaciones increíblemente rápidos."
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "javascript",
+                    "order": 3,
+                    "description": "Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Utiliza principalmente en del lado del cliente (client-side), osea, el  navegador web, permitiendo mejoras en la interfaz de usuario."
+                },
+                {
+                    "name": "React",
+                    "icon": "react",
+                    "order": 6,
+                    "description": "Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+                },
+                {
+                    "name": "Next.js",
+                    "icon": "nextjs",
+                    "order": 14,
+                    "description": "Next.js es un marco de JavaScript universal que se ejecuta en el navegador y el servidor. Ofrece una manera fácil de comenzar usando React.js para crear plantillas y aplicaciones."
+                },
+                {
+                    "name": "Express",
+                    "icon": "express",
+                    "order": 16,
+                    "description": "Es un marco de trabajo para el desarrollo aplicaciones web minimalista y flexible para Node.js"
+                },
+                {
+                    "name": "Git",
+                    "icon": "git",
+                    "order": 5,
+                    "description": "Es un software de control de versiones, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente."
+                },
+                {
+                    "name": "SQLite",
+                    "icon": "sqlite",
+                    "order": 17,
+                    "description": "Es motor de base de datos SQL pequeño, rápido, autónomo, de alta confiabilidad y con todas las funciones. Está integrado en todos los teléfonos móviles y en la mayoría de las computadoras."
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mysql",
+                    "order": 19,
+                    "description": "Es un sistema de gestión de bases de datos relacional usado por muchos sitios web grandes y populares, como Wikipedia, Google, Facebook, Twitter, Flickr, y YouTube."
+                },
+                {
+                    "name": "GraphQL",
+                    "icon": "graphql",
+                    "order": 8,
+                    "description": "Es un lenguaje de manipulación y consulta de datos de código abierto para las API, y un tiempo de ejecución para cumplir las consultas con los datos existentes."
+                },
+                {
+                    "name": "Sass",
+                    "icon": "sass",
+                    "order": 9,
+                    "description": "Es un metalenguaje de hoja de estilos de Hojas de Estilo en Cascada (CSS). El lenguaje de script es traducido a CSS."
+                },
+                {
+                    "name": "Vue.js",
+                    "icon": "vue",
+                    "order": 7,
+                    "description": "Es un marco de trabajo JavaScript para crear interfaces de usuario y aplicaciones de una sola página."
+                },
+                {
+                    "name": "Visual Studio",
+                    "icon": "VSCode",
+                    "order": 10,
+                    "description": "Es un editor de código fuente gratuito y de código abierto para Windows , Linux y macOS."
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "bootstrap",
+                    "order": 13,
+                    "description": "Es marco de trabajo que fomenta la consistencia entre las herramientas internas para diseño de sitios y aplicaciones web."
+                },
+                {
+                    "name": "Materialize",
+                    "icon": "materializecss",
+                    "order": 12,
+                    "description": "Es marco de trabajo para diseño de sitios y aplicaciones web que interpreta el sistema de diseño 'material' desarrollado pro google."
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "mongodb",
+                    "order": 18,
+                    "description": "Es un sistema de base de datos adecuado para su uso en producción y con múltiples funcionalidades NoSQL orientado a documentos de código abierto."
+                }
+            ] 
+        },
+        "es": {
+            "title" : "Habilidades",
+            "viewBox": "0 0 512 512",
+            "icon": "<path d=\"M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z\"/>",
+            "items": [
+                {
+                    "name": "HTML5",
+                    "icon": "html-5",
+                    "order": 1,
+                    "description": "Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet que permite ordenar y etiquetar diversos documentos dentro de una lista."
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "css-3",
+                    "order": 2,
+                    "description": "Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
+                },
+                {
+                    "name": "Node.js",
+                    "icon": "node",
+                    "order": 4,
+                    "description": "Es un entorno de ejecución multiplataforma, de código abierto, para la capa del servidor basado y construido con el motor de JavaScript V8 de Chrome."
+                },
+                {
+                    "name": "Babel",
+                    "icon": "babel",
+                    "order": 11,
+                    "description": "Babel es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión compatible con versiones anteriores de JavaScript en navegadores o entornos actuales y anteriores."
+                },
+                {
+                    "name": "Gatsby",
+                    "icon": "gatsby",
+                    "order": 15,
+                    "description": "Gatsby es un marco de desarrollo de código abierto y gratuito basado en React para crear sitios web y aplicaciones increíblemente rápidos."
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "javascript",
+                    "order": 3,
+                    "description": "Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Utiliza principalmente en del lado del cliente (client-side), osea, el  navegador web, permitiendo mejoras en la interfaz de usuario."
+                },
+                {
+                    "name": "React",
+                    "icon": "react",
+                    "order": 6,
+                    "description": "Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+                },
+                {
+                    "name": "Next.js",
+                    "icon": "nextjs",
+                    "order": 14,
+                    "description": "Next.js es un marco de JavaScript universal que se ejecuta en el navegador y el servidor. Ofrece una manera fácil de comenzar usando React.js para crear plantillas y aplicaciones."
+                },
+                {
+                    "name": "Express",
+                    "icon": "express",
+                    "order": 16,
+                    "description": "Es un marco de trabajo para el desarrollo aplicaciones web minimalista y flexible para Node.js"
+                },
+                {
+                    "name": "Git",
+                    "icon": "git",
+                    "order": 5,
+                    "description": "Es un software de control de versiones, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente."
+                },
+                {
+                    "name": "SQLite",
+                    "icon": "sqlite",
+                    "order": 17,
+                    "description": "Es motor de base de datos SQL pequeño, rápido, autónomo, de alta confiabilidad y con todas las funciones. Está integrado en todos los teléfonos móviles y en la mayoría de las computadoras."
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mysql",
+                    "order": 19,
+                    "description": "Es un sistema de gestión de bases de datos relacional usado por muchos sitios web grandes y populares, como Wikipedia, Google, Facebook, Twitter, Flickr, y YouTube."
+                },
+                {
+                    "name": "GraphQL",
+                    "icon": "graphql",
+                    "order": 8,
+                    "description": "Es un lenguaje de manipulación y consulta de datos de código abierto para las API, y un tiempo de ejecución para cumplir las consultas con los datos existentes."
+                },
+                {
+                    "name": "Sass",
+                    "icon": "sass",
+                    "order": 9,
+                    "description": "Es un metalenguaje de hoja de estilos de Hojas de Estilo en Cascada (CSS). El lenguaje de script es traducido a CSS."
+                },
+                {
+                    "name": "Vue.js",
+                    "icon": "vue",
+                    "order": 7,
+                    "description": "Es un marco de trabajo JavaScript para crear interfaces de usuario y aplicaciones de una sola página."
+                },
+                {
+                    "name": "Visual Studio",
+                    "icon": "VSCode",
+                    "order": 10,
+                    "description": "Es un editor de código fuente gratuito y de código abierto para Windows , Linux y macOS."
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "bootstrap",
+                    "order": 13,
+                    "description": "Es marco de trabajo que fomenta la consistencia entre las herramientas internas para diseño de sitios y aplicaciones web."
+                },
+                {
+                    "name": "Materialize",
+                    "icon": "materializecss",
+                    "order": 12,
+                    "description": "Es marco de trabajo para diseño de sitios y aplicaciones web que interpreta el sistema de diseño 'material' desarrollado pro google."
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "mongodb",
+                    "order": 18,
+                    "description": "Es un sistema de base de datos adecuado para su uso en producción y con múltiples funcionalidades NoSQL orientado a documentos de código abierto."
+                }
+            ]
+        }
+    }
+}

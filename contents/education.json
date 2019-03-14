@@ -1,0 +1,34 @@
+{
+    "education": {
+        "en": {
+            "title": "Educación",
+            "items": [
+                {
+                    "degree": "Licenciado en Matemáticas",
+                    "timeperiod": "2013",
+                    "description": "Universidad de Carabobo"
+                },
+                {
+                    "degree": "Ingles Básico",
+                    "timeperiod": "2004",
+                    "description": "Fundación Universidad de Carabobo"
+                }
+            ]
+        },
+        "es": {
+            "title": "Education",
+            "items": [
+                {
+                    "degree": "Licenciado en Matemáticas",
+                    "timeperiod": "2013",
+                    "description": "Universidad de Carabobo"
+                },
+                {
+                    "degree": "Ingles Básico",
+                    "timeperiod": "2004",
+                    "description": "Fundación Universidad de Carabobo"
+                }
+            ]
+        }
+    }
+}

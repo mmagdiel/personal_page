@@ -1,0 +1,1 @@
+const menu = require('../../contents/messages.js');

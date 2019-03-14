@@ -1,0 +1,50 @@
+{
+    "experience": {
+        "en": {
+            "title": "Experience",
+            "items": [
+                {
+                    "company":" Premiere Soluciones Integrales - PSI",
+                    "position": "Coordinador de Inteligencia de Negocios",
+                    "timeperiod": "once meses; 2016 - 2017",
+                    "description": "Desarrollo de las Aplicaciones Biométrico, Exposición e Indicadores"
+                },
+                {
+                    "company": "SofOS - SME",
+                    "position": "Consultor de desarrollo",
+                    "timeperiod": "siete meses; 2016 - 2016",
+                    "description": "Modulo de comisiones y difusos de nutrición. Planificación de arquitectura"
+                },
+                {
+                    "company": "Sernet",
+                    "position": "Coordinador de proyecto",
+                    "timeperiod": "once meses; 2015 - 2016",
+                    "description": "Desarrollo de negocio y la bases de datos. Planificación de arquitectura"
+                }
+            ]
+        },
+        "es": {
+            "title": "Experiencia",
+            "items": [
+                {
+                    "company":" Premiere Soluciones Integrales - PSI",
+                    "position": "Coordinador de Inteligencia de Negocios",
+                    "timeperiod": "once meses; 2016 - 2017",
+                    "description": "Desarrollo de las Aplicaciones Biométrico, Exposición e Indicadores"
+                },
+                {
+                    "company": "SofOS - SME",
+                    "position": "Consultor de desarrollo",
+                    "timeperiod": "siete meses; 2016 - 2016",
+                    "description": "Modulo de comisiones y difusos de nutrición. Planificación de arquitectura"
+                },
+                {
+                    "company": "Sernet",
+                    "position": "Coordinador de proyecto",
+                    "timeperiod": "once meses; 2015 - 2016",
+                    "description": "Desarrollo de negocio y la bases de datos. Planificación de arquitectura"
+                }
+            ]
+        }
+    }
+}
