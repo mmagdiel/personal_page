@@ -3,6 +3,7 @@ module.exports = {
         title: 'Gatsby Starter Blog',
     },
     plugins: [
+        `gatsby-plugin-ramda`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-layout`,
         `gatsby-transformer-json`,

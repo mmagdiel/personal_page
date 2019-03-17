@@ -1,28 +1,23 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { head, tail } from 'ramda'
 import { Header, Nav } from '../styles'
-import { Button, Image, Text } from 'rebass'
 import Icons from '../../effect/icons'
 import { IconBut, LinkIcon } from './styles'
+import { Button, Image, Text } from 'rebass'
+import { StaticQuery, graphql, Link } from 'gatsby'
+import { Menu, Capitalize } from '../../../utils/contents'
 
 export default ({ language, url_lang }) => {
     return (
         <StaticQuery 
             query={ query }
             render={ data => { 
+                const menu = Menu(data)
                 const [ { node } ] = data.allFile.edges
-                const { publicURL } = node
-                const { name } = node
-                const [  temp ] = data.allContentsJson.edges.filter(el => el.node.menu !== null)
-                
-                //                const [ ella ] = edges.filter(el =>  el.node.childContentsJson !== null)
-                const { viewBox } = temp.node.menu
-                const { icon } = temp.node.menu
-                const { items } = (language === 'es' ? temp.node.menu.es : temp.node.menu.en)
-                const [main, ...others] = items
-                const { url } = main
-                const langOther = (language !== 'es' ? 
-                'es'.charAt(0).toUpperCase() + 'es'.slice(1) : 'en'.charAt(0).toUpperCase()+ 'en'.slice(1))
+                const { items } = (language === 'es' ? menu.node.menu.es : menu.node.menu.en)
+                const langOther = (language !== 'es' ? Capitalize('es') : Capitalize('en'))
+                const Head = head(items)
+                const Tail = tail(items) 
                 return (
                     <Header 
                         justifyContent='space-around'
@@ -31,19 +26,22 @@ export default ({ language, url_lang }) => {
                         boxShadow='0 5px 7px #ccc' 
                         backgroundImage='linear-gradient(90deg, #e8ffdd, #235e07)'
                     >
-                        <Link to={ url }>
+                        <Link to={ Head.url }>
                             <Image 
                                 width={ 51 }
-                                src={ publicURL } 
-                                alt={ name } 
+                                src={ node.publicURL } 
+                                alt={ node.name } 
                                 borderRadius={ 8 }
                             />
                         </Link>
                         <Nav>
                             {
-                                others.map(el => {
+                                Tail.map(el => {
                                         return(
-                                            <Link to={ el.url }>
+                                            <Link 
+                                                to={ el.url }
+                                                key={ el.id }
+                                            >
                                                 <Button
                                                     bg='transparent'
                                                 >
@@ -64,9 +62,9 @@ export default ({ language, url_lang }) => {
                                         width={32}
                                         height={32}
                                         fill={'#fff'}
-                                        viewBox={viewBox}
+                                        viewBox={ menu.node.menu.viewBox }
                                     >
-                                        { icon }
+                                        { menu.node.menu.icon }
                                     </Icons>
                                     <Text
                                         m={1}

@@ -2,20 +2,20 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Image, Text, Card } from 'rebass'
 import { Section, Aside, Article } from '../styles'
+import { About } from '../../../utils/contents'
 
-export default () => {
+export default ({ language }) => {
     return (
         <StaticQuery 
             query={ query }
-            render={ data => { 
-                const { edges } = data.allFile
-                const [ el ] = edges.filter(el =>  el.node.childContentsJson === null)
-                const [ ella ] = edges.filter(el =>  el.node.childContentsJson !== null)
-                const { name } = el.node
-                const { publicURL } = el.node
-                const { quate } = ella.node.childContentsJson.about.es
-                const { greeting } = ella.node.childContentsJson.about.es
-                const { description } = ella.node.childContentsJson.about.es
+            render={ data => {              
+                const about = About(data)
+                const [ { node } ] = data.allFile.edges
+                const { name } = node
+                const { publicURL } = node
+                const { quate } = (language === 'en' ? about.node.about.en : about.node.about.es)
+                const { greeting } = (language === 'en' ? about.node.about.en : about.node.about.es)
+                const { description } = (language === 'en' ? about.node.about.en : about.node.about.es)
                 return (
                     <Section
                         m={ 17 }
@@ -78,27 +78,35 @@ export default () => {
 
 const query = graphql`
     query {
-        allFile(filter: {
-                extension: {
-                    in: ["jpg", "json"]
+        allFile (
+            filter:{
+                name: {
+                    eq: "me"
                 }
-            } 
-        ) {
+            }) {
             edges {
                 node {
                     name
                     publicURL
-                    childContentsJson {
-                        id
-                        about {
-                            es {
-                                description
-                                greeting
-                                quate
-                            }
-                        }
-                    } 
                 }
+            }
+        }
+        allContentsJson {
+            edges {
+                node {
+                    about {
+                        es {
+                            description
+                            greeting
+                            quate
+                        }
+                        en {
+                            description
+                            greeting
+                            quate
+                        }
+                    }
+                } 
             }
         }
     }

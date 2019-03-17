@@ -1,23 +1,16 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import lang from '../utils/lang_checker'
 
-export default ({ data, location }) => {
-    const language = lang(location)
-    //console.log(language)
+export default ({ data }) => {
     const { edges } = data.allMarkdownRemark
-    const posts = edges.filter(({ node }) => (
-        node.frontmatter.language === language
-    ))
-    //console.log(posts)
     return(
         <ul>
             {
-                posts.map(el => {
+                edges.map((el,i) => {
                     const { title } = el.node.frontmatter
                     const { path } = el.node.frontmatter
                     return(
-                        <li>
+                        <li key={i}>
                             <Link to={path}>
                                 {title}
                             </Link>
@@ -32,7 +25,14 @@ export default ({ data, location }) => {
 
 export const query = graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark (
+            filter:{
+                frontmatter: {
+                    language: {
+                        eq: "en"
+                    }
+                } 
+            }) {
             edges {
                 node {
                     id

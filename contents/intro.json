@@ -1,14 +1,14 @@
 {
     "intro": {
         "es":{
-            "welcome": "Hi",
-            "callToAction": "Do it",
-            "message": "Important"
-        },
-        "en": {
             "welcome": "Hola",
             "callToAction": "Solo haslo",
             "message": "Importante"
+        },
+        "en": {
+            "welcome": "Hi",
+            "callToAction": "Do it",
+            "message": "Important"
         }
     }
 }

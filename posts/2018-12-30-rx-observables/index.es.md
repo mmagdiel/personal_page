@@ -2,7 +2,7 @@
 title: Qué son y cómo usar los Observables en RxJS
 excerpt: Aprenda todo lo que necesita saber sobre los observables.
 tags: [typescript, javascript, rxjs]
-path: /es/blog/top-7-rxjs-patterns
+path: /es/blog/top-7-rxjs-patterns/
 cover: ./preview.png
 date: 2018-12-30
 language: es

@@ -2,7 +2,7 @@
 title: Cómo configurar TypeScript con Laravel y Vue
 excerpt: En esta publicación veremos cómo configurar el Typescript y cómo usarlo en un proyecto construido con Laravel y Vue.
 tags: [laravel, vuejs, typescript, javascript, nodejs]
-path: /es/blog/setup-typescript-with-laravel-and-vue
+path: /es/blog/setup-typescript-with-laravel-and-vue/
 cover: ./preview.jpg
 date: 2018-11-12
 language: es

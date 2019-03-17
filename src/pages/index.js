@@ -1,5 +1,5 @@
 import React from 'react'
-import lang from '../utils/lang_checker'
+import { lang }  from '../utils/i18n'
 import Intro from '../components/content/intro'
 import About from '../components/content/about'
 import Skills from '../components/content/skills'
@@ -13,13 +13,13 @@ export default ({ location }) => {
             <Intro 
                 language={ language }
             />
+            <About 
+                language={ language }
+            />
         </>
     )
 }
 /*
-<About 
-    language={ language }
-/>
 <Skills 
     language={ language } 
 />

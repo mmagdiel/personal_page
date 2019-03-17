@@ -1,7 +1,7 @@
 ---
 title: "Astuce: el usuario de comentarios SCSS dans Angular CLI 6"
 excerpt: Configure SCSS para su próximo proyecto Angular.
-path: /es/blog/scss-in-angular-cli-6
+path: /es/blog/scss-in-angular-cli-6/
 tags: [javascript, angular, sass]
 cover: ./preview.png
 date: 2018-12-21

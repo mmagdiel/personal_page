@@ -12,17 +12,17 @@
                 {
                     "id": "000b000",
                     "title": "Blog",
-                    "url": "/blog"
+                    "url": "/blog/"
                 },
                 {
                     "id": "000c000",
                     "title": "Media",
-                    "url": "/media"
+                    "url": "/media/"
                 },
                 {
                     "id": "000d000",
                     "title": "Contact",
-                    "url": "/contact"
+                    "url": "/contact/"
                 }
             ]
         },
@@ -36,17 +36,17 @@
                 {
                     "id": "000b000",
                     "title": "Blog",
-                    "url": "/es/blog"
+                    "url": "/es/blog/"
                 },
                 {
                     "id": "000c000",
                     "title": "Media",
-                    "url": "/es/media"
+                    "url": "/es/media/"
                 },
                 {
                     "id": "000d000",
                     "title": "Contacto",
-                    "url": "/es/contacto"
+                    "url": "/es/contacto/"
                 }
             ]
         }

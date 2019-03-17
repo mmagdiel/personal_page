@@ -2,7 +2,7 @@
 title: Cómo construir una aplicación electrónica usando la aplicación crear-reaccionar. No es necesaria la configuración del paquete web o "expulsión".
 excerpt: Crea una fantástica aplicación electrónica desde cero usando la aplicación crear-reaccionar.
 tags: [javascript, react, electron, nodejs]
-path: /es/blog/build-electron-app-with-react
+path: /es/blog/build-electron-app-with-react/
 cover: ./preview.png
 date: 2018-08-03
 language: es

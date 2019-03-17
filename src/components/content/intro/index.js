@@ -1,7 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql, navigate } from 'gatsby'
-import { Image, Text, Card, Heading, Button } from 'rebass'
-import { Section, Aside, Article } from '../styles'
+import { Text, Heading, Button } from 'rebass'
+import { Section, Article } from '../styles'
+import { linkI18n } from '../../../utils/i18n'
+import { Intro } from '../../../utils/contents'
 
 export default ({ language }) => {
     return (
@@ -10,13 +12,10 @@ export default ({ language }) => {
             render={ data => { 
                 const [ { node } ] = data.allFile.edges
                 const { publicURL } = node
-                const edges = data.allContentsJson.edges.filter(el => el.node.intro !== null)
-                const  [  intro  ] = edges.map(el => {
-                    return language === 'es' ? el.node.intro.es : el.node.intro.en
-                })
-                const { welcome } = intro
-                const { callToAction } = intro
-                const { message } = intro
+                const intro = Intro(data)
+                const { welcome } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
+                const { callToAction } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
+                const { message } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
                 const vw = (typeof window !== 'undefined' ?  window.innerWidth : null)
                 const vh = (typeof window !== 'undefined' ?  window.innerHeight : null)
                 const h = (vh - 71)
@@ -49,7 +48,7 @@ export default ({ language }) => {
                             </Text>
                             <Button
                                 color='white'
-                                onClick={()=>navigate('/contact')}
+                                onClick={()=>navigate(linkI18n('/contact', language))}
                             >
                                 {callToAction}
                             </Button>
