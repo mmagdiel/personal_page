@@ -2,13 +2,13 @@
     "intro": {
         "es":{
             "welcome": "Hola",
-            "callToAction": "Solo haslo",
-            "message": "Importante"
+            "callToAction": "Charlemos",
+            "message": "Soy Magdiel"
         },
         "en": {
             "welcome": "Hi",
-            "callToAction": "Do it",
-            "message": "Important"
+            "callToAction": "Lets chat",
+            "message": "I'm Magdiel"
         }
     }
 }

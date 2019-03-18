@@ -1,10 +1,33 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import { Footer } from '../styles'
-import { Image } from 'rebass'
+//import { StaticQuery, graphql, Link } from 'gatsby'
+import { Footer } from './styles'
+//import { Image } from 'rebass'
 
-export default ({ language }) => {
+export default () => {
     return (
+        <Footer />
+    )
+}
+/*
+const query = graphql`
+    query {
+        allFile(
+            filter: {
+                name: {
+                eq: "logo"
+                }
+            } 
+        ) {
+            edges {
+                node {
+                    name
+                    publicURL
+                }
+            }
+        }
+    }
+`
+
         <StaticQuery 
             query={ query }
             render={ data => {
@@ -48,24 +71,4 @@ export default ({ language }) => {
                 )
             }}
         />
-    )
-}
-
-const query = graphql`
-    query {
-        allFile(
-            filter: {
-                name: {
-                eq: "logo"
-                }
-            } 
-        ) {
-            edges {
-                node {
-                    name
-                    publicURL
-                }
-            }
-        }
-    }
-`
+*/

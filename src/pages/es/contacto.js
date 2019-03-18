@@ -1,3 +1,17 @@
+import React from 'react'
+import Contact from '../../components/layout/contact'
+import { lang }  from '../../utils/i18n'
+
+export default ({ location }) => {
+    const language = lang(location)
+    return(
+        <Contact 
+            language={ language }
+        />
+    )
+}
+  
+/*
 import React, { useState, useEffect } from 'react'
 import styled  from 'styled-components'
 
@@ -86,3 +100,4 @@ export default () => {
         </div>
     )
 }
+*/

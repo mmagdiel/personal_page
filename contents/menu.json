@@ -16,8 +16,8 @@
                 },
                 {
                     "id": "000c000",
-                    "title": "Media",
-                    "url": "/media/"
+                    "title": "About me",
+                    "url": "/about/"
                 },
                 {
                     "id": "000d000",
@@ -40,8 +40,8 @@
                 },
                 {
                     "id": "000c000",
-                    "title": "Media",
-                    "url": "/es/media/"
+                    "title": "Acerca de mi",
+                    "url": "/es/acerca/"
                 },
                 {
                     "id": "000d000",

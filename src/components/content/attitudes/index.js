@@ -3,18 +3,18 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Heading, Text, Flex } from 'rebass'
 import { Media, Section, Article } from '../styles'
 import Icons from '../../effect/icons'
+import { Attitudes } from '../../../utils/contents'
 
 export default ({ language }) => {
     return (
         <StaticQuery 
             query={ query }
             render={ data => { 
-                const [ node ] = data.allContentsJson.edges
-                const { attitudes } = node.node
-                const { title } = (language === 'es' ? attitudes.es : attitudes.en)
-                const { icon } = (language === 'es' ? attitudes.es : attitudes.en)
-                const { viewBox } = (language === 'es' ? attitudes.es : attitudes.en)
-                const { items } = (language === 'es' ? attitudes.es : attitudes.en)
+                const attitudes = Attitudes(data)
+                const { title } = (language === 'es' ? attitudes.node.attitudes.es : attitudes.node.attitudes.en)
+                const { icon } = (language === 'es' ? attitudes.node.attitudes.es : attitudes.node.attitudes.en)
+                const { viewBox } = (language === 'es' ? attitudes.node.attitudes.es : attitudes.node.attitudes.en)
+                const { items } = (language === 'es' ? attitudes.node.attitudes.es : attitudes.node.attitudes.en)
                 return (
                     <Section
                         m={ 17 }
@@ -41,9 +41,10 @@ export default ({ language }) => {
                         </Flex>
                         <Article>
                             {
-                                items.map(el => {
+                                items.map((el,i) => {
                                     return(
                                             <Media
+                                                key={i}
                                                 p={ 1 }
                                                 m={ 2 }
                                                 alignItems='center'
@@ -81,7 +82,6 @@ const query = graphql`
         allContentsJson {
             edges {
                 node {
-                    id
                     attitudes {
                         es {
                             title

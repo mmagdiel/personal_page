@@ -2,46 +2,84 @@
     "experience": {
         "en": {
             "title": "Experience",
+            "icon": "<path d=\"M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z\"/>",
+            "viewBox": "0 0 512 512",
             "items": [
                 {
-                    "company":" Premiere Soluciones Integrales - PSI",
-                    "position": "Coordinador de Inteligencia de Negocios",
-                    "timeperiod": "once meses; 2016 - 2017",
-                    "description": "Desarrollo de las Aplicaciones Biométrico, Exposición e Indicadores"
+                    "icon": "linktic",
+                    "company":"LinkTIC",
+                    "position": "Developer",
+                    "timeperiod": "Four months; 2016 - 2017",
+                    "description": "Development of the templates project and collaboration in administrator functionalities."
                 },
                 {
+                    "icon": "thools",
+                    "company": "Thools consulting",
+                    "position": "Frontend Developer",
+                    "timeperiod": "Seven months; 2016 - 2016",
+                    "description": "Development of the freight manager project and energy efficiency"
+                },
+                {
+                    "icon": "psi",
+                    "company":"Premiere Soluciones Integrales - PSI",
+                    "position": "Business Intelligence Coordinator",
+                    "timeperiod": "Eleven months; 2016 - 2017",
+                    "description": "Development of Biometric Applications, Exposure and Indicators"
+                },
+                {
+                    "icon": "sofos",
                     "company": "SofOS - SME",
-                    "position": "Consultor de desarrollo",
-                    "timeperiod": "siete meses; 2016 - 2016",
-                    "description": "Modulo de comisiones y difusos de nutrición. Planificación de arquitectura"
+                    "position": "Development consultant",
+                    "timeperiod": "Seven months; 2016 - 2016",
+                    "description": "Module of commissions and diffuses of nutrition. Architecture planning"
                 },
                 {
+                    "icon": "sernet",
                     "company": "Sernet",
-                    "position": "Coordinador de proyecto",
-                    "timeperiod": "once meses; 2015 - 2016",
-                    "description": "Desarrollo de negocio y la bases de datos. Planificación de arquitectura"
+                    "position": "Project coordinator",
+                    "timeperiod": "Eleven months; 2015 - 2016",
+                    "description": "Business development and databases. Architecture planning"
                 }
             ]
         },
         "es": {
             "title": "Experiencia",
+            "icon": "<path d=\"M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z\"/>",
+            "viewBox": "0 0 512 512",
             "items": [
                 {
-                    "company":" Premiere Soluciones Integrales - PSI",
-                    "position": "Coordinador de Inteligencia de Negocios",
-                    "timeperiod": "once meses; 2016 - 2017",
-                    "description": "Desarrollo de las Aplicaciones Biométrico, Exposición e Indicadores"
+                    "icon": "linktic",
+                    "company":"Linktic",
+                    "position": "Desarrollador",
+                    "timeperiod": "Cuatro meses, 2019",
+                    "description": "Desarrollo del proyecto templates y colaboración en funcionalidades del administrador."
                 },
                 {
-                    "company": "SofOS - SME",
-                    "position": "Consultor de desarrollo",
-                    "timeperiod": "siete meses; 2016 - 2016",
+                    "icon": "thools",
+                    "company": "Thools Consulting",
+                    "position": "Desarrollador Frontend",
+                    "timeperiod": "Nueve meses, 2018",
                     "description": "Modulo de comisiones y difusos de nutrición. Planificación de arquitectura"
                 },
                 {
+                    "icon": "psi",
+                    "company":" Premiere Soluciones Integrales - PSI",
+                    "position": "Coordinador de Inteligencia de Negocios",
+                    "timeperiod": "Once meses, 2016 - 2017",
+                    "description": "Desarrollo de las Aplicaciones Biométrico, Exposición e Indicadores"
+                },
+                {
+                    "icon": "sofos",
+                    "company": "SofOS - SME",
+                    "position": "Consultor de desarrollo",
+                    "timeperiod": "Siete meses, 2016",
+                    "description": "Modulo de comisiones y difusos de nutrición. Planificación de arquitectura"
+                },
+                {
+                    "icon": "sernet",
                     "company": "Sernet",
                     "position": "Coordinador de proyecto",
-                    "timeperiod": "once meses; 2015 - 2016",
+                    "timeperiod": "Once meses, 2015 - 2016",
                     "description": "Desarrollo de negocio y la bases de datos. Planificación de arquitectura"
                 }
             ]

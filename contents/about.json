@@ -1,13 +1,13 @@
 {
     "about": {
         "en": {
-            "greeting": "Lorem ipsum dolor sit amet, consectetur", 
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",            
-            "quate": "Las interfaces de usuario son como los chistes. Si tienes que explicarlos, no son buenos."
+            "greeting": "I am Magdiel Márquez, developed websites for the client layer as well as for the server.", 
+            "description": "I'm passionate about design and analysis. In addition, I'm self-taught, creative and persevering.",            
+            "quate": "User interfaces are like jokes. If you have to explain them, they aren't good."
         },
         "es": {
-            "greeting": "Lorem ipsum dolor sit amet, consectetur", 
-            "description": "Desarrollo experiencias webs. Autodidacta, creativo y perseverante. Apasionado por el diseño.",
+            "greeting": "Soy Magdiel Márquez, desarrolló webs para la capa del cliente así como para el servidor.", 
+            "description": "Me apasiona el diseño y el análisis. Además, soy autodidacta, creativo y perseverante.",
             "quate": "Las interfaces de usuario son como los chistes. Si tienes que explicarlos, no son buenos."
         }
     }

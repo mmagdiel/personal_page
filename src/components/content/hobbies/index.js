@@ -3,18 +3,18 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Flex, Heading, Text } from 'rebass'
 import { Media, Section, Article } from '../styles'
 import Icons from '../../effect/icons'
+import { Hobbies } from '../../../utils/contents'
 
 export default ({ language }) => {
     return (
         <StaticQuery 
             query={ query }
             render={ data => { 
-                const [ node ] = data.allContentsJson.edges
-                const { hobbies } = node.node
-                const { title } = (language === 'es' ? hobbies.es : hobbies.en)
-                const { icon } = (language === 'es' ? hobbies.es : hobbies.en)
-                const { viewBox } = (language === 'es' ? hobbies.es : hobbies.en)
-                const { items } = (language === 'es' ? hobbies.es : hobbies.en)
+                const hobbies = Hobbies(data)
+                const { title } = (language === 'es' ? hobbies.node.hobbies.es : hobbies.node.hobbies.en)
+                const { icon } = (language === 'es' ? hobbies.node.hobbies.es : hobbies.node.hobbies.en)
+                const { viewBox } = (language === 'es' ? hobbies.node.hobbies.es : hobbies.node.hobbies.en)
+                const { items } = (language === 'es' ? hobbies.node.hobbies.es : hobbies.node.hobbies.en)
                 return (
                     <Section
                         m={ 17 }
@@ -41,9 +41,10 @@ export default ({ language }) => {
                         </Flex>
                         <Article>
                             {
-                                items.map(el => {
+                                items.map((el,i) => {
                                     return(
                                             <Media
+                                                key={i}
                                                 p={ 1 }
                                                 m={ 2 }
                                                 alignItems='center'
@@ -82,16 +83,15 @@ const query = graphql`
         allContentsJson {
             edges {
                 node {
-                    id
                     hobbies{
                         es {
                             title
                             viewBox
                             icon
                             items {
-                            name
-                            viewBox
-                            icon
+                                name
+                                viewBox
+                                icon
                             }
                         }
                         en {
@@ -99,9 +99,9 @@ const query = graphql`
                             viewBox
                             icon
                             items {
-                            name
-                            viewBox
-                            icon
+                                name
+                                viewBox
+                                icon
                             }
                         }
                     }

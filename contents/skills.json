@@ -9,115 +9,121 @@
                     "name": "HTML5",
                     "icon": "html-5",
                     "order": 1,
-                    "description": "Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet que permite ordenar y etiquetar diversos documentos dentro de una lista."
+                    "description": "It's a markup language used for the development of web pages, which allows you to sort and label various documents within a list."
                 },
                 {
                     "name": "CSS3",
                     "icon": "css-3",
                     "order": 2,
-                    "description": "Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
+                    "description": "It's a language to define the graphic style and create the presentation of a structured document written in a markup language."
                 },
                 {
                     "name": "Node.js",
                     "icon": "node",
                     "order": 4,
-                    "description": "Es un entorno de ejecución multiplataforma, de código abierto, para la capa del servidor basado y construido con el motor de JavaScript V8 de Chrome."
+                    "description": "It's a cross-platform, open-source execution environment for the server-based layer built with the Chrome V8 JavaScript engine."
                 },
                 {
                     "name": "Babel",
                     "icon": "babel",
                     "order": 11,
-                    "description": "Babel es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión compatible con versiones anteriores de JavaScript en navegadores o entornos actuales y anteriores."
+                    "description": "It's a set of tools to convert the ECMAScript 2015+ code into a version compatible with previous versions of JavaScript in browsers."
                 },
                 {
                     "name": "Gatsby",
                     "icon": "gatsby",
                     "order": 15,
-                    "description": "Gatsby es un marco de desarrollo de código abierto y gratuito basado en React para crear sitios web y aplicaciones increíblemente rápidos."
+                    "description": "It's a free and open source framework based on React to create incredibly fast websites and applications."
                 },
                 {
                     "name": "JavaScript",
                     "icon": "javascript",
                     "order": 3,
-                    "description": "Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Utiliza principalmente en del lado del cliente (client-side), osea, el  navegador web, permitiendo mejoras en la interfaz de usuario."
+                    "description": "It's an interpreted programming language, dialect of the ECMAScript standard. It mainly uses on the client side allowing improvements in the user interface."
                 },
                 {
                     "name": "React",
                     "icon": "react",
                     "order": 6,
-                    "description": "Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+                    "description": "It's an open source Javascript library designed to create user interfaces with the aim of facilitating the development of applications on a single page."
                 },
                 {
                     "name": "Next.js",
                     "icon": "nextjs",
                     "order": 14,
-                    "description": "Next.js es un marco de JavaScript universal que se ejecuta en el navegador y el servidor. Ofrece una manera fácil de comenzar usando React.js para crear plantillas y aplicaciones."
+                    "description": "It's a universal JavaScript framework that runs on the browser and the server. It offers an easy way to start using React.js to create templates and applications."
                 },
                 {
                     "name": "Express",
                     "icon": "express",
                     "order": 16,
-                    "description": "Es un marco de trabajo para el desarrollo aplicaciones web minimalista y flexible para Node.js"
+                    "description": "It's a working framework for the development of minimalist and flexible web applications for Node.js"
                 },
                 {
                     "name": "Git",
                     "icon": "git",
                     "order": 5,
-                    "description": "Es un software de control de versiones, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente."
+                    "description": "It's a version control software, thinking about the efficiency and reliability of the maintenance of versions of applications when they have a large number of source code files."
                 },
                 {
                     "name": "SQLite",
                     "icon": "sqlite",
                     "order": 17,
-                    "description": "Es motor de base de datos SQL pequeño, rápido, autónomo, de alta confiabilidad y con todas las funciones. Está integrado en todos los teléfonos móviles y en la mayoría de las computadoras."
+                    "description": "It's a small, fast, autonomous, high reliability and full-featured SQL database engine. It is integrated into all mobile phones and most computers."
                 },
                 {
                     "name": "MySQL",
                     "icon": "mysql",
                     "order": 19,
-                    "description": "Es un sistema de gestión de bases de datos relacional usado por muchos sitios web grandes y populares, como Wikipedia, Google, Facebook, Twitter, Flickr, y YouTube."
+                    "description": "It's a relational database management system used by many large and popular websites, such as Wikipedia, Google, Facebook, Twitter, Flickr, and YouTube."
                 },
                 {
                     "name": "GraphQL",
                     "icon": "graphql",
                     "order": 8,
-                    "description": "Es un lenguaje de manipulación y consulta de datos de código abierto para las API, y un tiempo de ejecución para cumplir las consultas con los datos existentes."
+                    "description": "It is a language of manipulation and query of open source data for APIs, and a runtime to fulfill queries with existing data."
                 },
                 {
                     "name": "Sass",
                     "icon": "sass",
                     "order": 9,
-                    "description": "Es un metalenguaje de hoja de estilos de Hojas de Estilo en Cascada (CSS). El lenguaje de script es traducido a CSS."
+                    "description": "It's a metalanguage style sheet Cascading Style Sheets (CSS). The script language is translated into CSS."
                 },
                 {
                     "name": "Vue.js",
                     "icon": "vue",
                     "order": 7,
-                    "description": "Es un marco de trabajo JavaScript para crear interfaces de usuario y aplicaciones de una sola página."
+                    "description": "It's a JavaScript framework for creating user interfaces and single-page applications."
                 },
                 {
                     "name": "Visual Studio",
                     "icon": "VSCode",
                     "order": 10,
-                    "description": "Es un editor de código fuente gratuito y de código abierto para Windows , Linux y macOS."
+                    "description": "It's a free and open source source code editor for Windows, Linux and macOS."
                 },
                 {
                     "name": "Bootstrap",
                     "icon": "bootstrap",
                     "order": 13,
-                    "description": "Es marco de trabajo que fomenta la consistencia entre las herramientas internas para diseño de sitios y aplicaciones web."
+                    "description": "It's a framework that encourages consistency between the internal tools for website design and web applications."
                 },
                 {
                     "name": "Materialize",
                     "icon": "materializecss",
                     "order": 12,
-                    "description": "Es marco de trabajo para diseño de sitios y aplicaciones web que interpreta el sistema de diseño 'material' desarrollado pro google."
+                    "description": "It's a framework for the design of web sites and applications that interprets the 'material' design system developed by google."
                 },
                 {
                     "name": "MongoDB",
                     "icon": "mongodb",
                     "order": 18,
-                    "description": "Es un sistema de base de datos adecuado para su uso en producción y con múltiples funcionalidades NoSQL orientado a documentos de código abierto."
+                    "description": "It's a database system suitable for use in production and with multiple NoSQL functionalities oriented to open source documents."
+                },
+                {
+                    "name": "PHP",
+                    "icon": "php",
+                    "order": 20,
+                    "description": "It's a very popular open source language especially suitable for web development and that can be embedded in HTML."
                 }
             ] 
         },
@@ -130,13 +136,13 @@
                     "name": "HTML5",
                     "icon": "html-5",
                     "order": 1,
-                    "description": "Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet que permite ordenar y etiquetar diversos documentos dentro de una lista."
+                    "description": "Es un lenguaje de marcado utilizado para el desarrollo de páginas webs, que permite ordenar y etiquetar diversos documentos dentro de una lista."
                 },
                 {
                     "name": "CSS3",
                     "icon": "css-3",
                     "order": 2,
-                    "description": "Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
+                    "description": "Es un lenguaje para definir el estilo gráfico y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
                 },
                 {
                     "name": "Node.js",
@@ -148,31 +154,31 @@
                     "name": "Babel",
                     "icon": "babel",
                     "order": 11,
-                    "description": "Babel es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión compatible con versiones anteriores de JavaScript en navegadores o entornos actuales y anteriores."
+                    "description": "Es un conjunto de herramientas para convertir el código ECMAScript 2015+ en una versión compatible con versiones anteriores de JavaScript en los navegadores."
                 },
                 {
                     "name": "Gatsby",
                     "icon": "gatsby",
                     "order": 15,
-                    "description": "Gatsby es un marco de desarrollo de código abierto y gratuito basado en React para crear sitios web y aplicaciones increíblemente rápidos."
+                    "description": "Es un marco de trabajo de código abierto y gratuito basado en React para crear sitios web y aplicaciones increíblemente rápidos."
                 },
                 {
                     "name": "JavaScript",
                     "icon": "javascript",
                     "order": 3,
-                    "description": "Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Utiliza principalmente en del lado del cliente (client-side), osea, el  navegador web, permitiendo mejoras en la interfaz de usuario."
+                    "description": "Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Utiliza principalmente en del lado del cliente permitiendo mejoras en la interfaz de usuario."
                 },
                 {
                     "name": "React",
                     "icon": "react",
                     "order": 6,
-                    "description": "Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+                    "description": "Es una librería Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
                 },
                 {
                     "name": "Next.js",
                     "icon": "nextjs",
                     "order": 14,
-                    "description": "Next.js es un marco de JavaScript universal que se ejecuta en el navegador y el servidor. Ofrece una manera fácil de comenzar usando React.js para crear plantillas y aplicaciones."
+                    "description": "Es un marco de trabajo JavaScript universal que se ejecuta en el navegador y el servidor. Ofrece una manera fácil de comenzar usando React.js para crear plantillas y aplicaciones."
                 },
                 {
                     "name": "Express",
@@ -239,6 +245,12 @@
                     "icon": "mongodb",
                     "order": 18,
                     "description": "Es un sistema de base de datos adecuado para su uso en producción y con múltiples funcionalidades NoSQL orientado a documentos de código abierto."
+                },
+                {
+                    "name": "PHP",
+                    "icon": "php",
+                    "order": 18,
+                    "description": "Es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML."
                 }
             ]
         }

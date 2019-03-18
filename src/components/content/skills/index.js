@@ -5,24 +5,25 @@ import { Section, Article, Media } from '../styles'
 import { Tooltip } from './styles'
 import Icons from '../../effect/icons'
 import chunk from '../../../utils/chunk'
+import { Skills } from '../../../utils/contents'
 
 export default ({ language }) => {
     return (
         <StaticQuery 
             query={ query }
             render={ data => { 
+                const skills = Skills(data)
                 const { edges } = data.allFile
-                const el = edges.filter(el =>  el.node.childContentsJson === null)
-                const [ ella ] = edges.filter(el =>  el.node.childContentsJson !== null)
                 const { title } = (language === 'es' ? 
-                    ella.node.childContentsJson.skills.es : ella.node.childContentsJson.skills.en)
+                    skills.node.skills.es : skills.node.skills.en)
                 const { icon } = (language === 'es' ? 
-                    ella.node.childContentsJson.skills.es : ella.node.childContentsJson.skills.en)
+                    skills.node.skills.es : skills.node.skills.en)
                 const { viewBox } = (language === 'es' ? 
-                    ella.node.childContentsJson.skills.es : ella.node.childContentsJson.skills.en)
+                    skills.node.skills.es : skills.node.skills.en)
                 const { items } = (language === 'es' ? 
-                    ella.node.childContentsJson.skills.es : ella.node.childContentsJson.skills.en)
-                const merge = el.map(e => {
+                    skills.node.skills.es : skills.node.skills.en)
+
+                    const merge = edges.map(e => {
                         const temp = items.filter(ee => (
                             ee.icon === e.node.name)
                         )
@@ -78,14 +79,15 @@ export default ({ language }) => {
                             </Heading>
                         </Flex>
                         {
-                            arr.map(el => {
+                            arr.map((el, i) => {
                                 return (
                                     <Article
+                                        key={i}
                                         m={1}
                                         flexDirection='row'
                                     >
                                         {
-                                            el.map(ella => {
+                                            el.map((ella,i) => {
                                                 const { publicURL } = ella
                                                 const { name } = ella
                                                 const { icon } = ella
@@ -94,6 +96,7 @@ export default ({ language }) => {
                                                 const { order } = ella
                                                 return (
                                                     <Tooltip
+                                                        key={i}
                                                         aria-label={ description }
                                                         visibility={ flag }
                                                         order={ order }
@@ -136,6 +139,55 @@ export default ({ language }) => {
 }
 
 const query = graphql`
+query {
+    allFile(
+        filter: {
+            extension: {
+                eq: "svg"    
+            }
+        } 
+    ) {
+        edges {
+            node {
+                name
+                publicURL
+            }
+        }
+    }
+    allContentsJson{
+      edges{
+        node {
+          skills {
+            es {
+              title
+              viewBox
+              icon
+              items {
+                name
+                icon
+                order
+                description
+              }
+            }
+            en {
+              title
+              viewBox
+              icon
+              items{
+                name
+                icon
+                order
+                description
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+/*
+const query = graphql`
     query {
         allFile(
             filter: {
@@ -149,7 +201,6 @@ const query = graphql`
                     name
                     publicURL
                     childContentsJson {
-                        id
                         skills {
                             es {
                                 title
@@ -180,3 +231,4 @@ const query = graphql`
         }
     }
 `
+*/

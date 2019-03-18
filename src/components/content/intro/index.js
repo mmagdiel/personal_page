@@ -22,6 +22,7 @@ export default ({ language }) => {
                 const w = (vw - 17)
                 const paddingButton = Math.round(h*0.15) 
                 const paddingRight = Math.round(w*0.15) 
+                const url = linkI18n('/contact/', language)
                 return (
                     <Section
                         backgroundImage={`url(${publicURL})`}
@@ -48,7 +49,7 @@ export default ({ language }) => {
                             </Text>
                             <Button
                                 color='white'
-                                onClick={()=>navigate(linkI18n('/contact', language))}
+                                onClick={()=>navigate(url)}
                             >
                                 {callToAction}
                             </Button>

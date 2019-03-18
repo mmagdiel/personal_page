@@ -63,4 +63,11 @@ export const Skills = (data) => {
     return skills
 }
 
+export const Contact = (data) => {
+    const isNotNull = el => el.node.contact !== null
+    const { edges } = data.allContentsJson
+    const [ contact ] = filter(isNotNull, edges)
+    return contact
+}
+
 export const Capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
