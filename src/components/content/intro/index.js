@@ -16,23 +16,17 @@ export default ({ language }) => {
                 const { welcome } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
                 const { callToAction } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
                 const { message } = (language === 'en' ? intro.node.intro.en : intro.node.intro.es )
-                const vw = (typeof window !== 'undefined' ?  window.innerWidth : null)
-                const vh = (typeof window !== 'undefined' ?  window.innerHeight : null)
-                const h = (vh - 71)
-                const w = (vw - 17)
-                const paddingButton = Math.round(h*0.15) 
-                const paddingRight = Math.round(w*0.15) 
                 const url = linkI18n('/contact/', language)
                 return (
                     <Section
                         backgroundImage={`url(${publicURL})`}
                         backgroundSize={'100% 100%'}
-                        width={w}
-                        height={h}
+                        width='100%'
+                        height='93vh'
                         justifyContent='flex-end'
                         alignItems='flex-end'
-                        pr={paddingRight}
-                        pb={paddingButton}
+                        pr='15%'
+                        pb='15vh'
                     >
                         <Article
                             flexDirection='column'
