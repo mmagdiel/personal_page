@@ -1,3 +1,71 @@
-html, body {
-	margin: 0 0 0 0 !important;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("../images/frontal.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.instagram:hover {
+  width: auto;
+  height: auto;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.box_icons {
+  min-width: 210px;
+}
+
+.flex-100 {
+  flex: 0 0 auto;
+}
+
+.bg-navbar {
+  background: linear-gradient(90deg, #e8ffdd, #235e07);
+}
+
+.lang {
+  fill: #fff;
+}
+
+.lang:hover {
+  fill: #f6ad55;
+}
+
+.minh-1-8 {
+  min-height: 12.5vh;
+}
+
+.bg-footer {
+  background: linear-gradient(360deg, #e8ffdd, #235e07);
 }
