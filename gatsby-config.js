@@ -1,36 +1,45 @@
 /**
  * Configure your Gatsby site with this file.
  *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
 module.exports = {
+  siteMetadata: {
+    siteTitle: `magdiel site`,
+    siteTitleAlt: `A software developer`,
+    siteHeadline: `A software developer`,
+    siteDescription: `A personal website and blog`,
+    siteLanguage: `en`,
+    siteUrl: "https://mmagdiel.dev",
+    siteImage: `/banner.jpg`,
+    author: `mmagdiel`,
+    basePath: `/`,
+  },
+  /* Your site config here */
   plugins: [
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-layout`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-typescript`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`
-      }
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `docs`,
-        path: `${__dirname}/src/docs/`
-      }
+        name: `sections`,
+        path: `${__dirname}/src/sections`,
+      },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        name: `content`,
-        path: `./src/content/`
-      }
+        lessBabel: true,
+      },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`
-  ]
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-theme-ui`,
+  ],
 };
