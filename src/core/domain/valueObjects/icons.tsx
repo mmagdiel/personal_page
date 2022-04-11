@@ -68,12 +68,12 @@ const icons: Record<IconType, IconElements> = {
   },
 };
 
-function getShape(icon: IconType): string {
-  return icons[icon].viewBox;
+function getShape(icon: IconType): React.ReactNode {
+  return icons[icon]["shape"];
 }
 
-function getViewBox(icon: IconType): React.ReactNode {
-  return icons[icon].shape;
+function getViewBox(icon: IconType): string {
+  return icons[icon]["viewBox"];
 }
 
 export { getShape, getViewBox };

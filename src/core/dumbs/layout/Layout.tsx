@@ -1,7 +1,7 @@
 import React from "react";
 import { globalStyles } from "./styles";
 import { Global } from "@emotion/react";
-import { Seo } from "../seo";
+import { Seo } from "../seo/Seo";
 
 type LayoutProps = { children: React.ReactNode; className?: string };
 

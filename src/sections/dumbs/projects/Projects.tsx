@@ -1,8 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Divider, Inner, Content } from "../../../core";
-import { UpDown, UpDownWide, Svg } from "../../../core";
+import { SvgUpDown, SvgUpDownWide, SvgList } from "../../../core";
 import { getGradient } from "../../../gatsby-plugin-theme-ui";
+import {
+  projectsListSvg,
+  projectsListUpDown,
+  projectsListUpDownWide,
+} from "../../domain";
+
 // @ts-ignore
 import ProjectsMDX from "../../data/projects";
 
@@ -36,102 +42,9 @@ const Projects = ({
       </Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
-      <UpDown>
-        <Svg icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
-        <Svg icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
-        <Svg
-          icon="triangle"
-          width={8}
-          stroke
-          color="icon_orange"
-          left="25%"
-          top="5%"
-        />
-        <Svg
-          icon="circle"
-          hiddenMobile
-          width={24}
-          color="icon_purple"
-          left="7%"
-          top="60%"
-        />
-      </UpDown>
-      <UpDownWide>
-        <Svg
-          icon="arrowUp"
-          hiddenMobile
-          width={16}
-          color="icon_green"
-          left="20%"
-          top="90%"
-        />
-        <Svg
-          icon="triangle"
-          width={12}
-          stroke
-          color="icon_brightest"
-          left="90%"
-          top="30%"
-        />
-        <Svg
-          icon="circle"
-          width={16}
-          color="icon_purple"
-          left="70%"
-          top="90%"
-        />
-        <Svg
-          icon="triangle"
-          hiddenMobile
-          width={16}
-          stroke
-          color="icon_teal"
-          left="18%"
-          top="75%"
-        />
-        <Svg icon="circle" width={6} color="icon_orange" left="85%" top="10%" />
-        <Svg
-          icon="upDown"
-          hiddenMobile
-          width={8}
-          color="icon_green"
-          left="15%"
-          top="10%"
-        />
-      </UpDownWide>
-      <Svg
-        icon="circle"
-        hiddenMobile
-        width={6}
-        color="icon_brightest"
-        left="4%"
-        top="20%"
-      />
-      <Svg
-        icon="circle"
-        width={12}
-        color="icon_brightest"
-        left="90%"
-        top="60%"
-      />
-      <Svg icon="box" width={6} color="icon_darkest" left="10%" top="10%" />
-      <Svg icon="box" width={12} color="icon_yellow" left="19%" top="26%" />
-      <Svg
-        icon="hexa"
-        width={16}
-        stroke
-        color="icon_red"
-        left="75%"
-        top="30%"
-      />
-      <Svg
-        icon="hexa"
-        width={8}
-        stroke
-        color="icon_green"
-        left="85%"
-        top="70%"
-      />
+      <SvgUpDown list={projectsListUpDown} />
+      <SvgUpDownWide list={projectsListUpDownWide} />
+      <SvgList list={projectsListSvg} />
     </Divider>
   </div>
 );
